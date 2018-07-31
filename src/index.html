@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css framework</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|UnifrakturCook:700|UnifrakturMaguntia" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/eqcss.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+
+        @media (max-width: 1366px) { 
+            .stage {
+                height: auto;
+                max-width: 1366px;
+                margin: 0 auto;
+            }
+            .stage img {
+                display: block;
+            }
+        }
+
+         @media (min-width: 1367px) { 
+            .stage { 
+                background: url(images/buehne-1.png) no-repeat center 0;
+                /* background-size: 100% 483px; */
+                height: 483px;
+                max-width: 100%;
+            }
+            .stage img {
+                display: none;
+            }
+        }
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+       <img src="images/buehne-1-middle.png" alt="">
+    </div>
+
+    <script src="js/browser-detection.js"></script>
+    <script src="js/EQCSS.js"></script>
+</body>
+
+</html>
