@@ -1,0 +1,41 @@
+// VARIABLES
+// colors
+$base-color: #653e18;
+$color-border: lighten($base-color, 10);
+$color-text: $base-color;
+// typo
+$_base-font-size: 16; // value in px
+
+// BREAKPOINTS
+@mixin breakpoint($point) {
+    @if $point==desktop {
+        // 1120px
+        @media (min-width: 70em) {
+            @content ;
+        }
+    }
+    @else if $point==laptop {
+        // 1024px
+        @media (min-width: 64em) {
+            @content ;
+        }
+    }
+    @else if $point==tablet {
+        // 768
+        @media (min-width: 48em) {
+            @content ;
+        }
+    }
+    @else if $point==phablet {
+        // 600px
+        @media (min-width: 37.5em) {
+            @content ;
+        }
+    }
+    @else if $point==mobileonly {
+        // 600px
+        @media (max-width: 37.5em) {
+            @content ;
+        }
+    }
+}

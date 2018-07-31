@@ -1,0 +1,35 @@
+.site {
+    border: 1px solid #000;
+    display: grid;
+    margin: 0 auto;
+    max-width: 950px;
+    grid-template-areas: "head head head" "navi navi navi" "main main main" "aside aside aside" "footer footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 150px 1fr 150px;
+
+
+    @include breakpoint(tablet) {
+        grid-template-areas: "head head head" "navi main aside" "footer footer footer";
+	}
+   
+}
+
+header {
+    grid-area: head;
+}
+
+nav {
+    grid-area: navi;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
